@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { 
+      width: 260px; 
+      padding: 20px; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+      background-color: #1a1a1a; 
+      color: #e0e0e0; 
+    }
+    h3 { 
+      margin-top: 0; 
+      color: #4CAF50; 
+      text-align: center; 
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .row { 
+      display: flex; 
+      justify-content: space-between; 
+      margin-bottom: 12px; 
+      align-items: center; 
+      background-color: #2d2d2d;
+      padding: 8px;
+      border-radius: 6px;
+    }
+    label { 
+      font-weight: bold; 
+      color: #ccc; 
+      font-size: 14px;
+    }
+    input { 
+      width: 50px; 
+      padding: 6px; 
+      text-align: center; 
+      background: #383838; 
+      border: 1px solid #555; 
+      color: #fff; 
+      border-radius: 4px; 
+      font-weight: bold;
+    }
+    input:focus {
+      outline: none;
+      border-color: #4CAF50;
+    }
+    button { 
+      width: 100%; 
+      padding: 12px; 
+      margin-top: 10px; 
+      border: none; 
+      color: white; 
+      cursor: pointer; 
+      font-weight: bold; 
+      border-radius: 6px; 
+      font-size: 13px;
+      transition: background 0.2s;
+    }
+    button#filterBtn { background: #2196F3; }
+    button#filterBtn:hover { background: #1976D2; }
+    
+    button#resetBtn { background: #1e88e5; margin-top: 8px; } /* Ten sam kolor co wyżej na screenie */
+    button#resetBtn:hover { background: #1565c0; }
+  </style>
+</head>
+<body>
+  <h3>Twoje Grupy</h3>
+  
+  <div class="row"><label>C / Ć</label><input type="number" id="C" value="2"></div>
+  <div class="row"><label>S</label><input type="number" id="S" value="2"></div>
+  <div class="row"><label>Lk</label><input type="number" id="Lk" value="3"></div>
+  <div class="row"><label>P</label><input type="number" id="P" value="3"></div>
+  <div class="row"><label>Lek</label><input type="number" id="Lek" value="4"></div>
+  <div class="row"><label>L</label><input type="number" id="L" value="5"></div>
+  
+  <button id="filterBtn">FILTRUJ PLAN</button>
+  <button id="resetBtn">POKAŻ WSZYSTKO</button>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
