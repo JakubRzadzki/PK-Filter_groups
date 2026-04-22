@@ -1,16 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Filtr Grup PK (Iframe Fix)",
-  "version": "3.0",
-  "description": "Filtruje plan nawet wewnątrz ramek DokuWiki",
+  "name": "Filtr Grup PK",
+  "version": "4.0",
+  "description": "Filtruje plan zajęć WIEiK PK według grup",
   "permissions": ["activeTab", "scripting"],
-  "host_permissions": ["*://eclipse.elektron.pk.edu.pl/*"],
+  "host_permissions": ["*://plany.wieik.pk.edu.pl/*"],
   "action": {
     "default_popup": "popup.html"
   },
   "content_scripts": [
     {
-      "matches": ["*://eclipse.elektron.pk.edu.pl/*"],
+      "matches": ["*://plany.wieik.pk.edu.pl/*"],
       "js": ["content.js"],
       "all_frames": true,
       "run_at": "document_end"
